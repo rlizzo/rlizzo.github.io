@@ -3,7 +3,7 @@ layout: post
 title:  "working with numpy arrays"
 date:   2017-12-18
 excerpt: "Let's see what it can do"
-image: "/images/Rick-Izzo_Portrait_01.jpg"
+image: "/images/numpy.jpeg"
 ---
 
 #### Applicable version(s):
