@@ -9,3 +9,6 @@
 
 - name: "Blog"
   link: "/blog/2017-12-15-welcome-to-jekyll"
+
+- name: "Projects"
+  link: "/projects/projects"
