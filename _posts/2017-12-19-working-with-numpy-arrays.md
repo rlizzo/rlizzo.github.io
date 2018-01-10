@@ -3,7 +3,7 @@ layout: post
 title:  "working with numpy arrays"
 date:   2017-12-18
 excerpt: "Let's see what it can do"
-image: "/images/numpy.jpeg"
+image: "/images/posts/2017-12-19/numpy.jpeg"
 ---
 
 #### Applicable version(s):
@@ -62,14 +62,14 @@ In this interpretation, we can think of <i> Points </i> as a vertices which defi
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure1](/images/izzo-numpy-1-1.png){:height="250px" width="250px"}| ![Figure2](/images/izzo-numpy-1-2.png)
+|![Figure1](/images/posts/2017-12-19/izzo-numpy-1-1.png){:height="250px" width="250px"}| ![Figure2](/images/posts/2017-12-19/izzo-numpy-1-2.png)
 |*Figure 1: Illustration of vertices as Points*	          | *Figure 2: Illustration of image as points*
 
 On the other hand, <i> Cells </i> define the topology of the data object. In the context of surfaces, this is a  describes the connectivity of the vertices which form each triangle in the surface (see Figure 3). For centerlines, Cells describe the connectivity and grouping of points which make up the centerline data object (see Figure 4). Though in theory, cells can be used to group certain regions in vtkImageData, we do not define the concept of cells as it relates to a VMTK image. 
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure3](/images/izzo-numpy-2-1.png)| ![Figure4](/images/izzo-numpy-2-2.png)
+|![Figure3](/images/posts/2017-12-19/izzo-numpy-2-1.png){:height="200px" width="400px"}| ![Figure4](/images/posts/2017-12-19/izzo-numpy-2-2.png){:height="200px" width="400px"}
 |*Figure 1: Illustration of cells creating a triangulated surface*	          | *Figure 2: Illustration cells defining a line*
 
 <br>
@@ -110,7 +110,7 @@ The following example demonstrates how to convert a VMTK surface to a numpy arra
 
 The structure of the `ArrayDict` nested dictionary is as follows:
 
-```
+```python
 ArrayDict
     ['Points']                   <-- required, is Nx3 array of N vertexes and x, y, z locations
     ['PointData']                <-- required, even if subarrays are empty
@@ -118,7 +118,7 @@ ArrayDict
         ['PointDataArray2']      <-- optional
         ...
     ['CellData']                 <-- required
-        ['CellPointIds']         <-- required, is Mx3 array defines cell conectivity to ['Points] Indices
+        ['CellPointIds']         <-- required, is Mx3 array defines cell conectivity to ['Points'] Indices
         ['CellDataArray1']       <-- optional, (ex. CenterlineTractId)
         ['CellDataArray2']       <-- optional
         ...
@@ -161,6 +161,7 @@ numpySurface
 ```
 
 
+```python   
     {'CellData': {'CellPointIds': array([[     0,      1,      2],
              [     1,      3,      4],
              [     5,      6,      7],
@@ -179,7 +180,7 @@ numpySurface
             [ -21.8845253 ,   10.9817152 , -242.10021973],
             [  -5.70769596,    0.96210521, -247.94236755],
             [ -24.40606117,    2.56822777, -245.54272461]], dtype=float32)}
-
+```
 
 
 For `numpySurface`, we can see that the numpy of surface points (stored in `numpySurface['Points']`) and the number of triangles (stored in `numpySurface['CellData']['CellPointIds']`) is:
@@ -201,7 +202,7 @@ We can also see that the data stored in `PointData` has the shape:
 print('numpySurface["PointData"]["DistanceToCenterlines"] shape = ', numpySurface["PointData"]["DistanceToCenterlines"].shape)
 ```
 
-    numpySurface["PointData"]["DistanceToCenterlines"] shape =  (209988,)
+`numpySurface["PointData"]["DistanceToCenterlines"] shape =  (209988,)`
 
 
 which exactly matches the number of vertices in the `Points` array. In this case, each index in `numpySurface['PointData']['DistanceToCenterlines']` corresponds to a row in ` numpySurface['Points'] `. ie. `numpySurface['PointData']['DistanceToCenterlines'][100]` corresponds to the vertex defined by coordinates at `numpySurface['Points'][100, :]`
@@ -233,7 +234,7 @@ The following example demonstrates how to convert a VMTK centerline to a numpy a
 
 The structure of the `ArrayDict` nested dictionary is as follows:
 
-```
+```python
 ArrayDict
     ['Points']                   <-- required, is Nx3 array of N vertexes and x, y, z locations
     ['PointData']                <-- required, even if subarrays are empty
@@ -262,6 +263,7 @@ clNumpyAdaptor.Execute()
 numpyCenterlines = clNumpyAdaptor.ArrayDict
 ```
 
+```
     Reading VTK XML surface file.
     wrapping vtkPolyData object
     converting cell data: 
@@ -273,7 +275,7 @@ numpyCenterlines = clNumpyAdaptor.ArrayDict
     converting point data: 
     MaximumInscribedSphereRadius
     converting cell connectivity list
-
+```
 
 Like the surface example above, we can see that the data accessed through `numpyCenterlines['Points']` is a numpy array of shape Nx3:
 
@@ -374,7 +376,7 @@ clVmtkAdaptor.Execute()
 
 The conversion of VMTK Image Objects requires a much simpler ArrayDict structure than for a surface or centerline. The structure of the `ArrayDict` is as follows:
 
-```
+```python
 ArrayDict
     ['Origin']                 <-- required, is 3x1 array of (float) x,y,z vertex locations at index (0,0,0)
     ['Dimensions']             <-- required, is 3x1 array of (int) number of voxels in the x,y,z direction.
