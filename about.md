@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Jekyll Theme - About - Massively
-description: When building a website it's helpful to see what the focus of your site is. This page is an example of how to show a website's focus.
+title: Rick Izzo's Personal Web Page
+description: PhD Candidate, Scientific Programmer, Avid Guitaristfocus.
 sitemap:
     priority: 0.7
     lastmod: 2017-11-02
@@ -23,7 +23,7 @@ Hi! I am a ...
 
 ## Publications
 
-1) <b>Izzo R.</b>, O’Hara R, Iyer V, Hansen R, Meess K, Nagesh SV, Rudin S, Siddiqui A, Springer M,  Ionita C. "3D Printed Cardiac Phantom for Procedural Planning of a Transcatheter Native Mitral Valve Replacement" Proc. SPIE 9789, Medical Imaging 2016: PACS and Imaging Informatics.
+1) <b>Izzo R.</b>, O’Hara R, Iyer V, Hansen R, Meess K, Nagesh SV, Rudin S, Siddiqui A, Springer M,  Ionita C. ["3D Printed Cardiac Phantom for Procedural Planning of a Transcatheter Native Mitral Valve Replacement"](/publications/3D-printed-cardiac-phantom-for-procedural-planning.pdf) Proc. SPIE 9789, Medical Imaging 2016: PACS and Imaging Informatics.
 
 2) <b>Izzo R.</b> Invited Speaker. Gates Vascular Institute Regional Structural Heart Symposium. “Applications of 3D Printing to Interventional Cardiology”. University at Buffalo Clinical and Translational Research Center, Buffalo, NY, November 14, 2015.
 
@@ -46,13 +46,21 @@ https://youtu.be/eps98a6NtuY?t=36m47s
 
 10) <b>Izzo R.</b> Invited Speaker. SUNY at Buffalo Principles of Biomedical Engineering BE201 Class. “Fluid Dynamics in Biomedical Engineering”. University at Buffalo BE201 Class, Buffalo, NY, November 18, 2015.
 
-11) Meess KM, <b>Izzo RL</b>, Dryjski ML, Curl RE, Harris LM, Springer M, et al., editors. 3D printed abdominal aortic aneurysm phantom for image guided surgical planning with a patient specific fenestrated endovascular graft system. SPIE Medical Imaging; 2017; Orlando.
+11) Meess KM, <b>Izzo RL</b>, Dryjski ML, Curl RE, Harris LM, Springer M, et al., editors. [3D printed abdominal aortic aneurysm phantom for image guided surgical planning with a patient specific fenestrated endovascular graft system](/publications/3D-printed-abdominal-aortic-aneurysm-phantom.pdf). SPIE Medical Imaging; 2017; Orlando.
 
-12) Shepard L, Sommer K, <b>Izzo R</b>, Podgorsak A, Wilson M, Zaid S, et al., editors. Initial simulated FFR investigation using flow measurements in patient- specific 3D printed coronary phantoms. SPIE Medical Imaging; 2017; Orlando.
+12) Shepard L, Sommer K, <b>Izzo R</b>, Podgorsak A, Wilson M, Zaid S, et al., editors. [Initial simulated FFR investigation using flow measurements in patient- specific 3D printed coronary phantoms](/publications/Initial-simulated-FFR-investigation-using-flow-measurements.pdf). SPIE Medical Imaging; 2017; Orlando.
 
-13) Sommer K, <b>Izzo RL</b>, Shepard L, Podgorzak AR, Rudin S, Siddiqui AH, et al., editors. Design optimization for accurate flow simulations in 3D printed vascular phantoms derived from computed tomography angiography. SPIE Medical Imaging; 2017; Orlando.
+13) Sommer K, <b>Izzo RL</b>, Shepard L, Podgorzak AR, Rudin S, Siddiqui AH, et al., editors. [Design optimization for accurate flow simulations in 3D printed vascular phantoms derived from computed tomography angiography](/publications/Design-optimization-for-accurate-flow-simulations-in-3D-printed-vascular.pdf). SPIE Medical Imaging; 2017; Orlando.
 
 14) Schaffner TJ, <b>Izzo RL</b>, Ionita CN, Schwaitzberg SD, editors. Three-Dimensional Modeling Of Complex Visceral Malrotation Following Posttraumatic Diaphragmatic Hernia. SAGES; 2017 March 22, 2017; Houston.
 
 
 ## Other Studff
+
+Twitter Feeds worth Following:
+
+
+<a class="twitter-timeline" data-height="600" href="https://twitter.com/orobix?ref_src=twsrc%5Etfw">Tweets by orobix</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
