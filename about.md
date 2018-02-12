@@ -15,7 +15,7 @@ This site is under development. Please check back soon.
 
 <img class="image left" src="/images/Rick-Izzo_Portrait_01.jpg">
 
-Hi! I am a ...
+Richard (Rick) is a native of WNY who graduated magna cum laude from the University at Buffalo (UB) in May 2015 with a double degree, BS in biomedical engineering and BA in chemistry. Rick is currently pursuing his PhD in biomedical engineering at UB, specializing in 3D printing in healthcare, under the advisement of Ciprian Ionita, PhD. In this capacity, he works collaboratively as a research associate at the Jacobs Institute (JI). Previously, he was a JI intern. While in undergraduate school, he worked as a researcher in UB’s Lovell Nanomedicine Laboratory and under Renee Reynolds, MD, in his senior year to understand pediatric neurological conditions. Rick served as first author on one journal article and co-author on three more. He has also given presentations at five conferences, presented two webinars, and was a featured speaker at the Virtual 3D Printing in Medicine Summit. In addition to his research work, Rick is active in community engagement, assisting in the Brain Bootcamp program to teach schoolchildren about heart attack and stroke in a fun and interactive way. He was an active rower, and head coach of the St. Joseph’s Collegiate Institute freshman crew program for two years.
 
 ## Research Interest
 
